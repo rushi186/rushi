@@ -1,9 +1,9 @@
-const {parseCsvToJson, calculatePercentage} = require("./utils");
+const { parseCsvToJson } = require("./utils");
 
 const getDeathsPerMonth=function(data){
     const deathsPerMonth={};
 
-    data.forEach(country => {
+    data.map(country => {
         const date=new Date(country.Date);
         const month=date.getMonth()+1;
         const year=date.getFullYear();

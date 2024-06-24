@@ -1,4 +1,4 @@
-const {parseCsvToJson, calculatePercentage} = require("./utils");
+const { parseCsvToJson, calculatePercentage } = require("./utils");
 
 const generateStats = function (allCountriesData) {
 

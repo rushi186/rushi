@@ -1,4 +1,4 @@
-const {parseCsvToJson, calculatePercentage} = require("./utils");
+const { parseCsvToJson } = require("./utils");
 const{percentagesByCountry}=require("./countryByPercentage")
 const abovePercentageFifthy=function(file){
  return file.filter(country=>parseInt(country.deathsPercentage)>15);;
